@@ -3,7 +3,7 @@
 this is the DisplayArticle interface
  */
 interface DisplayArticleList {
-	function DisplayArticles($data);
+	function DisplayArticleList($data);
 	function Pagination();
 }
 ?>

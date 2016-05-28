@@ -1,5 +1,5 @@
 <?php
-$GLOBALS['location'] = "http://" . $_SERVER['HTTP_HOST'] . "/Large-software-design-homework/rebuild htmls/";
+$GLOBALS['location'] = "http://" . $_SERVER['HTTP_HOST'] . "/Rebuilding-the-mini-blog-Use-OOP/";
 //引入MySQL 的类文件
 require 'Mysql.class.php';
 /**
@@ -43,7 +43,7 @@ class basePage {
 		    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 		    <meta name="keywords" content="完全是为了应付作业">
 		    <meta name="description" content="<?php echo $this->description ?>" />
-		    <title><?php echo $this->title . "|" . $this->description ?></title>
+		    <title><?php echo $this->title . " | " . $this->description ?></title>
 		    <link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['location']; ?>addtionalFonts/css/font-awesome.min.css">
 		    <link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['location']; ?>css/style.css">
 		</head>

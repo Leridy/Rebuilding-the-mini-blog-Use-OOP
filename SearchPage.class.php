@@ -49,7 +49,7 @@ class SearchPage extends IndexPage
         echo "<header id=\"search-page-header\" class=\"main-header\">
                 <h1 class=\"s-p-h-keywords main-title\">" . $this->SearchHeader . ":" . $this->SKeyWords . "</h1>
             </header>";
-        $this->DisplayArticles($this->ArticleArray);
+        $this->DisplayArticleList($this->ArticleArray);
         $this->Pagination();
         echo "</main>";
     }
@@ -141,7 +141,7 @@ class SearchPage extends IndexPage
      */
     public function setTitle()
     {
-        $this->title = $this->SearchHeader."--".$this->SKeyWords." " ;
+        $this->title = $this->SKeyWords."--".$this->SearchHeader." " ;
     }
 
 

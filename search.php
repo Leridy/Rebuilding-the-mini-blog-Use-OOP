@@ -24,6 +24,7 @@ $SearchPageSQL->HandleResult();
 $SearchPage->setTotalPage(ceil($SearchPageSQL->getSqlResultNum() / $SearchPage->getArticleNum()));
 
 //µ÷ÓÃSqlStart
+$SearchPage->getPageNum();
 $SearchPage->getSqlStart();
 //
 $SearchPage->MakeArticleSql();

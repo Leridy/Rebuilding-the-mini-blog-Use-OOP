@@ -70,7 +70,7 @@ class IndexPage extends basePage implements DisplayArticleList
         $this->ArticleSql = "select * from article where id order by time desc limit " . $this->SqlStart . "," . $this->ArticleNum;
     }
 
-    public function DisplayArticles($data)
+    public function DisplayArticleList($data)
     {
         if ($data == null) {
             echo $this->Notice;
@@ -217,7 +217,7 @@ class IndexPage extends basePage implements DisplayArticleList
     function DisplayMain()
     {
         echo "<main id=\"main\">";
-        $this->DisplayArticles($this->ArticleArray);
+        $this->DisplayArticleList($this->ArticleArray);
         $this->Pagination();
         echo "</main>";
     }
