@@ -52,8 +52,7 @@ class IndexPage extends basePage implements DisplayArticleList
             //若page存在则将page强制类型专化，用于过滤非法传值
             $this->pageNum = (int)$_GET["page"];
             //若强制转换后的值为0 则返回1，否则返回当前page值
-            if ($this->pageNum == 0) {
-                echo "p2 1<br>";
+            if ($this->pageNum <= 0) {
                 $this->pageNum = 1;
             } elseif ($this->pageNum > $this->totalPage) {
                 $this->pageNum = $this->totalPage;
