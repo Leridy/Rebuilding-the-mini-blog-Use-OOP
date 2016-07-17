@@ -4,8 +4,8 @@ require_once '../connect.php';
 check_sign_in();
 //读取旧信息
 $id = is_modify_article();
-$query = mysql_query("select * from article where id=$id");
-$data = mysql_fetch_assoc($query);
+$query = mysqli_query($con, "select * from article where id=$id");
+$data = mysqli_fetch_assoc($query);
 $content = str_replace("", "\t", $data['content']);
 $content = str_replace("</p><p class=\"atc-p\">", "\r\n\t", $content);
 ?>

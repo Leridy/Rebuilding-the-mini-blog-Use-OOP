@@ -5,8 +5,8 @@ if (isset($_POST['adminname']) || isset($_POST['adm-password'])) {
 	$username = $_POST['adminname'];
 	$password = $_POST['adm-password'];
 	$userVSql = "select password from user_table where username = '$username'";
-	$query = mysql_query($userVSql);
-	$passwordRseult = mysql_fetch_array($query, MYSQL_ASSOC);
+	$query = mysqli_query($con, $userVSql);
+	$passwordRseult = mysqli_fetch_array($query, MYSQLI_ASSOC);
 	if ($passwordRseult['password'] == $password && $passwordRseult['password'] != NULL) {
 		$_SESSION['lg-sign'] = 1;
 		setcookie('username', $username, time() + 3600);

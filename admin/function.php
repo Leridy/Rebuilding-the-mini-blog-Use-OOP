@@ -1,6 +1,6 @@
 <?php
 //设置网站的根目录，方便资源定位
-$location = "http://" . $_SERVER['HTTP_HOST'] . "/Large-software-design-homework/htmls/";
+$location = "http://" . $_SERVER['HTTP_HOST'] . "/Rebuilding-the-mini-blog-Use-OOP/htmls/";
 
 //输出网页尾部，输出页脚
 function show_footer() {
@@ -273,7 +273,7 @@ return 0;*/
 	$username = isset($_COOKIE['username']) ? $_COOKIE['username'] : NULL;
 	$password = isset($_COOKIE['password']) ? $_COOKIE['password'] : NULL;
 	// 声明变量，$loginLocation 用于保存登录页的位置
-	$loginLocation = $_SERVER['HTTP_HOST'] . "/Large-software-design-homework/htmls/admin/login.php";
+	$loginLocation = $_SERVER['HTTP_HOST'] . "Rebuilding-the-mini-blog-Use-OOP/htmls/admin/login.php";
 	//声明变量，$thisPageLocation 用于储存当前页面的位置
 	$thisPageLocation = $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 	if (check_session()) {
